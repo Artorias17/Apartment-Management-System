@@ -1,0 +1,252 @@
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left top;
+    background-image: url("../img/1.jpg");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+/*Title design*/
+.titleC{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    margin: 5px 20px;
+}
+
+#dashb{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    padding: 10px 10px;
+    flex:2;
+
+}
+#dashb a{
+    color: white;
+    text-decoration: none;
+}
+#dashb a:hover{
+    color: white;
+    background: none;
+}
+#currentU{
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    padding: 10px 10px;
+    margin-top: 30px;
+
+}
+.btn{
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 35px;
+    flex: 0.3;
+}
+
+.btn a{
+    border: 3px solid white;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+.btn a:hover{
+    background-color: white;
+    color: black;
+}
+.mid{
+    margin:2%;
+    border: white solid 1px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+/*Search Design*/
+#sbox{
+    display: flex;
+    flex-basis: 35%;
+    flex-direction: row;
+    justify-items: flex-start;
+    position: relative;
+    min-width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    margin: 10px 10px 10px 20px;
+}
+
+/*Search Design - Search Bar Design*/
+#field{
+    width: 260px;
+    height: 95%;
+    overflow: hidden;
+    font-size: 20px;
+    flex: 1.5;
+    border: white solid 1px;
+}
+
+#field input{
+    width: 85%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.46);
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+}
+
+/*Search Design - Search Button Design*/
+#searchbtn {
+    width: 100px;
+    text-align: center;
+}
+
+/*Search Design - Search Button Design [Esp. for Search button]*/
+
+/*Search Design - Search Button Design [Also for options Button]*/
+input[class="b"]{
+    background: none;
+    border: 3px solid white;
+    font-size: x-large;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin: auto;
+    height: 100%;
+    padding-left: 4px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.b:hover{
+    background-color: white;
+    color: black;
+}
+
+.optionsC{
+    display: flex;
+    flex-basis: 60%;
+    min-width: fit-content;
+    height: 50px;
+    margin: 10px;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    justify-items: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.opt{
+    min-width: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+.mega{
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    position: relative;
+}
+
+.tableblock{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    backdrop-filter: blur(10px);
+    min-width: 900px;
+    height: fit-content;
+    border: white solid 1px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.tt{
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tab{
+    border-collapse: collapse;
+    margin: 15px 20px;
+    min-width: -webkit-fill-available;
+    font-size: large;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.tab thead tr{
+    background: white;
+    color: black;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.tab tbody{
+    text-align: left;
+}
+
+.tab th{
+    text-align: left;
+}
+
+.tab tr{
+    padding: 10px;
+    height: 40px;
+    border-bottom: white;
+}
+
+.tab td{
+    width: fit-content;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.tab tbody tr{
+    border-bottom: white 1px solid;
+}
+
+.operation{
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}

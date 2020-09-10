@@ -1,0 +1,77 @@
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: left top;
+    background-image: url("../img/1.jpg");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+.c{
+    background: rgb(214,214,214);
+    background: linear-gradient(223deg, rgba(255, 255, 255, 0.16) 0%,
+    rgba(135, 135, 135, 0.09) 35%,
+    rgba(0, 0, 0, 0.4) 100%);
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 300px;
+    position: fixed;
+    top: 20%;
+    left: 37%;
+}
+.login-box{
+    padding: 50px;
+    width: 80%;
+    height: auto;
+    color: white;
+}
+.login-box h1{
+    font-family: 'Bebas Neue', cursive;
+    float: top;
+    font-size: 70px;
+    border-bottom: 6px solid;
+    margin-bottom: 50px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.71);
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: none;
+    border: 3px solid white;
+    font-size: x-large;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+#btn:hover {
+    background-color: white;
+    color: black;
+}

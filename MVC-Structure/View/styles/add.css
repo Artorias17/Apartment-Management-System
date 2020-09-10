@@ -1,0 +1,218 @@
+body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left top;
+    background-image: url("../img/1.jpg");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+/*Title design*/
+.titleC{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    margin: 5px 20px;
+}
+
+#dashb{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    padding: 10px 10px;
+    flex:2;
+
+}
+#dashb a{
+    color: white;
+    text-decoration: none;
+}
+#dashb a:hover{
+    color: white;
+    background: none;
+}
+#currentU{
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    padding: 10px 10px;
+    margin-top: 30px;
+
+}
+.btn{
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 35px;
+    flex: 0.3;
+}
+
+.btn a{
+    border: 3px solid white;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+.btn a:hover{
+    background-color: white;
+    color: black;
+}
+
+.block{
+    position: relative;
+    backdrop-filter: blur(10px);
+    display: block;
+    width: 900px;
+    height: fit-content;
+    top: 390px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: white solid 1px;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.formName{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+.formName p{
+    margin: 10px 20px;
+}
+.f{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: auto;
+    min-width: 350px;
+    margin: 10px;
+}
+/*Search Design*/
+.merge{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.fieldC{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    justify-content: space-between;
+    min-width: 420px;
+    height: 60px;
+    color: white;
+    margin: 5px;
+}
+.ft{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 120px;
+    margin: 10px;
+}
+
+.ft p{
+    display: inline-block;
+    margin: 0px;
+    font-size: x-large;
+
+}
+
+.field{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex: 1.5;
+    border: white solid 1px;
+    padding: 10px;
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+#s1{
+   min-width: auto;
+    width: 260px;
+}
+#s2{
+    min-width: auto;
+    width: 260px;
+}
+#s3{
+    min-width: auto;
+    width: 310px;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.46);
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+}
+
+#radioblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    flex: 1.5;
+}
+input[class="rfield"]{
+    position: relative;
+    margin: 10px;
+    width: 30px;
+    height: 50px;
+    left: 15px;
+    top: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.transport{
+    min-width: 0px;
+}
+
+input[class='has']{
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.button{
+    text-align: center;
+}
+.press{
+    min-width: fit-content;
+    text-align: center;
+    position: relative;
+    border: white solid 3px;
+    background: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: white;
+    margin: 10px;
+
+}
+
+
+.press:hover{
+    background-color: white;
+    color: black;
+}
+
+.field option{
+    background-color : dimgray;
+    color : white;
+}
