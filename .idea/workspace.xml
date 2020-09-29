@@ -19,9 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74088663-7415-49b4-ae26-a5c8aa0c2fee" name="Default Changelist" comment="&quot;Initial commit&quot;">
+    <list default="true" id="74088663-7415-49b4-ae26-a5c8aa0c2fee" name="Default Changelist" comment="&quot;Unit Testing&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVC-Structure/Model/Calculator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/ApartmentTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/Autoloader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/CalculatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/ResidentTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/UserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/VehicleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCode/VisitorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit-nightly.phar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/Apartment.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/Apartment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/DBconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/DBconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/Guard.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/Guard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/Resident.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/Resident.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/Vehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/Vehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC-Structure/Model/Visitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC-Structure/Model/Visitor.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +58,7 @@
       <server host="localhost" id="212a7b95-0f94-46ad-916e-473704ef1f1d" name="Apache" />
     </servers>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1hKRT2ZzLi3VX4OVvvcZeivM5fj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,18 +66,67 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Constants" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TestCode" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.TestAll">
+    <configuration name="ApartmentTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ApartmentTest" file="$PROJECT_DIR$/TestCode/ApartmentTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculatorTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="CalculatorTest" file="$PROJECT_DIR$/TestCode/CalculatorTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAll" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner directory="$PROJECT_DIR$/TestCode" options="--verbose" />
+      <method v="2" />
+    </configuration>
+    <configuration name="VehicleTest.testSet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="VehicleTest" file="$PROJECT_DIR$/TestCode/VehicleTest.php" method="testSet" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="VisitorTest.testSet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="VisitorTest" file="$PROJECT_DIR$/TestCode/VisitorTest.php" method="testSet" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="Run" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache" start_url="/Apartment-Management-System/MVC-Structure">
       <method v="2" />
     </configuration>
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache" start_url="/Apartment-Management-System/MVC-Structure">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHP Web Page.Run" />
+      <item itemvalue="PHPUnit.TestAll" />
+      <item itemvalue="PHPUnit.VehicleTest.testSet" />
+      <item itemvalue="PHPUnit.ApartmentTest" />
+      <item itemvalue="PHPUnit.CalculatorTest" />
+      <item itemvalue="PHPUnit.VisitorTest.testSet" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.VisitorTest.testSet" />
+        <item itemvalue="PHPUnit.CalculatorTest" />
+        <item itemvalue="PHPUnit.ApartmentTest" />
+        <item itemvalue="PHPUnit.VehicleTest.testSet" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,6 +137,13 @@
       <option name="presentableId" value="Default" />
       <updated>1599757804613</updated>
       <workItem from="1599757808123" duration="2482000" />
+      <workItem from="1599853933571" duration="5056000" />
+      <workItem from="1600002083534" duration="10233000" />
+      <workItem from="1601063104882" duration="18673000" />
+      <workItem from="1601103591939" duration="17505000" />
+      <workItem from="1601285486059" duration="39556000" />
+      <workItem from="1601355495486" duration="692000" />
+      <workItem from="1601384700193" duration="11139000" />
     </task>
     <servers />
   </component>
@@ -84,72 +160,109 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Unit Testing&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Unit Testing&quot;" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="270" y="26" key="#CLI_Interpreters" timestamp="1599854744330">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="270" y="26" key="#CLI_Interpreters/0.0.1366.736@0.0.1366.736" timestamp="1599854744330" />
     <state x="248" y="22" key="#Servers" timestamp="1599757897579">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="248" y="22" key="#Servers/0.0.1366.736@0.0.1366.736" timestamp="1599757897579" />
-    <state x="118" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599758461911">
+    <state x="118" y="0" width="1071" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601390696010">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="118" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1599758461911" />
-    <state x="470" y="126" key="FileChooserDialogImpl" timestamp="1599758029534">
+    <state x="118" y="0" width="1071" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1601390696010" />
+    <state x="100" y="100" width="1166" height="536" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601325051669">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="470" y="126" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1599758029534" />
-    <state width="1320" height="216" key="GridCell.Tab.0.bottom" timestamp="1599760291817">
+    <state x="100" y="100" width="1166" height="536" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.736@0.0.1366.736" timestamp="1601325051669" />
+    <state x="484" y="48" width="388" height="639" key="#com.intellij.ide.util.MemberChooser" timestamp="1601291194121">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1599760291817" />
-    <state width="1320" height="216" key="GridCell.Tab.0.center" timestamp="1599760291816">
+    <state x="484" y="48" width="388" height="639" key="#com.intellij.ide.util.MemberChooser/0.0.1366.736@0.0.1366.736" timestamp="1601291194121" />
+    <state x="470" y="126" width="424" height="485" key="FileChooserDialogImpl" timestamp="1601313476555">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1599760291816" />
-    <state width="1320" height="216" key="GridCell.Tab.0.left" timestamp="1599760291816">
+    <state x="470" y="126" width="424" height="485" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1601313476555" />
+    <state width="1320" height="218" key="GridCell.Tab.0.bottom" timestamp="1601396949704">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1599760291816" />
-    <state width="1320" height="216" key="GridCell.Tab.0.right" timestamp="1599760291816">
+    <state width="1320" height="218" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1601396949704" />
+    <state width="1320" height="218" key="GridCell.Tab.0.center" timestamp="1601396949703">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1599760291816" />
-    <state width="1320" height="216" key="GridCell.Tab.1.bottom" timestamp="1599760291818">
+    <state width="1320" height="218" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1601396949703" />
+    <state width="1320" height="218" key="GridCell.Tab.0.left" timestamp="1601396949702">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.1.bottom/0.0.1366.736@0.0.1366.736" timestamp="1599760291818" />
-    <state width="1320" height="216" key="GridCell.Tab.1.center" timestamp="1599760291817">
+    <state width="1320" height="218" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1601396949702" />
+    <state width="1320" height="218" key="GridCell.Tab.0.right" timestamp="1601396949703">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.1.center/0.0.1366.736@0.0.1366.736" timestamp="1599760291817" />
-    <state width="1320" height="216" key="GridCell.Tab.1.left" timestamp="1599760291817">
+    <state width="1320" height="218" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1601396949703" />
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom" timestamp="1601396450989">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.1.left/0.0.1366.736@0.0.1366.736" timestamp="1599760291817" />
-    <state width="1320" height="216" key="GridCell.Tab.1.right" timestamp="1599760291817">
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom/0.0.1366.736@0.0.1366.736" timestamp="1601396450989" />
+    <state width="1320" height="219" key="GridCell.Tab.1.center" timestamp="1601396450988">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.1.right/0.0.1366.736@0.0.1366.736" timestamp="1599760291817" />
-    <state width="1320" height="216" key="GridCell.Tab.2.bottom" timestamp="1599760291819">
+    <state width="1320" height="219" key="GridCell.Tab.1.center/0.0.1366.736@0.0.1366.736" timestamp="1601396450988" />
+    <state width="1320" height="219" key="GridCell.Tab.1.left" timestamp="1601396450988">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.2.bottom/0.0.1366.736@0.0.1366.736" timestamp="1599760291819" />
-    <state width="1320" height="216" key="GridCell.Tab.2.center" timestamp="1599760291818">
+    <state width="1320" height="219" key="GridCell.Tab.1.left/0.0.1366.736@0.0.1366.736" timestamp="1601396450988" />
+    <state width="1320" height="219" key="GridCell.Tab.1.right" timestamp="1601396450988">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.2.center/0.0.1366.736@0.0.1366.736" timestamp="1599760291818" />
-    <state width="1320" height="216" key="GridCell.Tab.2.left" timestamp="1599760291818">
+    <state width="1320" height="219" key="GridCell.Tab.1.right/0.0.1366.736@0.0.1366.736" timestamp="1601396450988" />
+    <state width="1320" height="216" key="GridCell.Tab.2.bottom" timestamp="1600016250037">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.2.left/0.0.1366.736@0.0.1366.736" timestamp="1599760291818" />
-    <state width="1320" height="216" key="GridCell.Tab.2.right" timestamp="1599760291819">
+    <state width="1320" height="216" key="GridCell.Tab.2.bottom/0.0.1366.736@0.0.1366.736" timestamp="1600016250037" />
+    <state width="1320" height="216" key="GridCell.Tab.2.center" timestamp="1600016250036">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1320" height="216" key="GridCell.Tab.2.right/0.0.1366.736@0.0.1366.736" timestamp="1599760291819" />
-    <state x="184" y="3" key="SettingsEditor" timestamp="1599758395546">
+    <state width="1320" height="216" key="GridCell.Tab.2.center/0.0.1366.736@0.0.1366.736" timestamp="1600016250036" />
+    <state width="1320" height="216" key="GridCell.Tab.2.left" timestamp="1600016250036">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="184" y="3" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1599758395546" />
+    <state width="1320" height="216" key="GridCell.Tab.2.left/0.0.1366.736@0.0.1366.736" timestamp="1600016250036" />
+    <state width="1320" height="216" key="GridCell.Tab.2.right" timestamp="1600016250037">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1320" height="216" key="GridCell.Tab.2.right/0.0.1366.736@0.0.1366.736" timestamp="1600016250037" />
+    <state x="335" y="89" key="NewPhpClassDialog" timestamp="1599856525673">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="335" y="89" key="NewPhpClassDialog/0.0.1366.736@0.0.1366.736" timestamp="1599856525673" />
+    <state x="505" y="292" key="NewPhpFileDialog" timestamp="1601079016534">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="505" y="292" key="NewPhpFileDialog/0.0.1366.736@0.0.1366.736" timestamp="1601079016534" />
+    <state x="184" y="3" width="1007" height="731" key="SettingsEditor" timestamp="1601390071309">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="184" y="3" width="1007" height="731" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1601390071309" />
+    <state x="289" y="78" width="904" height="596" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1601390856010">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="289" y="78" width="904" height="596" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1366.736@0.0.1366.736" timestamp="1601390856010" />
+    <state x="347" y="160" key="run.anything.popup" timestamp="1601105760097">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="347" y="160" key="run.anything.popup/0.0.1366.736@0.0.1366.736" timestamp="1601105760097" />
+    <state x="346" y="56" width="672" height="678" key="search.everywhere.popup" timestamp="1601395147705">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="346" y="56" width="672" height="678" key="search.everywhere.popup/0.0.1366.736@0.0.1366.736" timestamp="1601395147705" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -164,7 +277,15 @@
           <line>36</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/TestCode/VisitorTest.php</url>
+          <line>75</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Apartment_Management_System@Calc.xml" NAME="Calc Coverage Results" MODIFIED="1601077517777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

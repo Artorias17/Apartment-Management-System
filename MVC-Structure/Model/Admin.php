@@ -8,11 +8,13 @@ class Admin extends User{
     }
 
     public static function fetchAll(){
-        $arr=mysqli_query(DBconnect::connect(), "SELECT * FROM users WHERE isAdmin = 1");
+        $q="SELECT * FROM users WHERE isAdmin = 1";
+        $arr=(new Admin())->queryWrapper($q);
         $a=[];
         while($k=$arr->fetch_assoc()){
             $a[$k["id"]]=$k;
         }
         return $a;
     }
+
 }

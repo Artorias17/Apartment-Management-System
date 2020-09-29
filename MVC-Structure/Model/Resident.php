@@ -13,7 +13,8 @@ class Resident extends DBconnect {
     }
 
     public static function fetchAll(){
-        $arr=mysqli_query(self::connect(), "SELECT * FROM resident");
+        $q="SELECT * FROM resident";
+        $arr=(new Resident())->queryWrapper($q);
 
         $assocArray=array();
         while($n=$arr->fetch_assoc()){
@@ -24,29 +25,32 @@ class Resident extends DBconnect {
 
     public static function fetch($rid){
         $sql="SELECT * FROM resident WHERE rid={$rid}";
-        $sql=mysqli_query(DBconnect::connect(), $sql);
+        $sql=(new Resident())->queryWrapper($sql);
         return $sql->fetch_assoc();
     }
 
     public function delete(){
         $sql= "DELETE FROM resident WHERE resident.rid = {$this->rid}";
-        $sql= mysqli_query(self::connect(), $sql);
+        $sql= $this->queryWrapper($sql);
     }
 
     public function update(){
         $sql="UPDATE resident SET rname = '{$this->rname}', gender = '{$this->gender}', phoneno = '{$this->phoneno}' WHERE resident.rid = {$this->rid}";
-        $sql=mysqli_query(self::connect(), $sql);
+        $sql=$this->queryWrapper($sql);
     }
 
     public function insert(){
         $x="INSERT INTO resident (rid, rname, gender, phoneno) VALUES (NULL, '{$this->rname}', '{$this->gender}', '{$this->phoneno}')";
-        $x=mysqli_query(self::connect(), $x);
+        $x=$this->queryWrapper($x);
 
         $x="SELECT MAX(rid) AS rid FROM resident WHERE rname='{$this->rname}' AND gender='{$this->gender}' AND phoneno= '{$this->phoneno}'";
-        $x=mysqli_query(self::connect(), $x);
+        $x=$this->queryWrapper($x);
 
         $x= $x->fetch_assoc();
         $this->rid=$x["rid"];
     }
 
+    public function queryWrapper($q){
+        return parent::query($q);
+    }
 }

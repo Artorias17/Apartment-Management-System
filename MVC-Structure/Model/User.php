@@ -31,22 +31,22 @@ class User extends DBconnect {
     }
     public function insert(){
         $sql = "INSERT INTO users VALUES (NULL, '{$this->name}', '{$this->userName}', '{$this->password}', '{$this->gender}', {$this->isAdmin}, '{$this->dateOfBirth}', '{$this->address}')";
-        $sql = mysqli_query(self::connect(), $sql);
+        $sql = $this->queryWrapper($sql);
 
         $sql = "SELECT MAX(id) AS id FROM users WHERE users.name= '{$this->name}' AND users.username= '{$this->userName}' AND users.gender= '{$this->gender}' AND users.dateOfBirth= '{$this->dateOfBirth}' AND users.address= '{$this->address}'";
-        $sql = mysqli_query(self::connect(), $sql);
+        $sql = $this->queryWrapper($sql);
         $sql = $sql->fetch_assoc();
         $this->id= $sql['id'];
     }
 
     public function delete(){
         $sql="DELETE FROM users WHERE users.id = {$this->id}";
-        $sql=mysqli_query(self::connect(), $sql);
+        $sql=$this->queryWrapper($sql);
     }
 
     public function update(){
         $sql="UPDATE users SET username='{$this->userName}', name = '{$this->name}', password = '{$this->password}', gender = '{$this->gender}', isAdmin = {$this->isAdmin}, dateOfBirth = '{$this->dateOfBirth}', address = '{$this->address}' WHERE users.id = {$this->id}";
-        mysqli_query(self::connect(), $sql);
+        $this->queryWrapper($sql);
     }
 
 
@@ -55,11 +55,30 @@ class User extends DBconnect {
         $sql = "SELECT * FROM users WHERE username='$u' AND password='$p'";
 
         //Execute the query
-        $sql = mysqli_query(DBconnect::connect(), $sql);
+        $sql = (new User)->queryWrapper($sql);
         $result=[];
         while($store=$sql->fetch_assoc()){
             $result[count($result)]=$store;
         }
         return $result;
+    }
+
+    public function queryWrapper(string $q){
+        return parent::query($q);
+    }
+
+    //FOR UNIT TESTING
+    public function getAllData(){
+        $arr=array(
+            "id" =>$this->id,
+            "password" => $this->password,
+            "name" => $this->name,
+            "username" => $this->userName,
+            "gender" => $this->gender,
+            "dateOfBirth" => $this->dateOfBirth,
+            "address" => $this->address,
+            "isAdmin" => $this->isAdmin
+        );
+        return $arr;
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
 class DBconnect{
-    private static String $host="localhost", $user="root", $pw="", $db="apt";
+    protected String $host="localhost", $user="root", $pw="", $db="apt";
 
     //creating connection
-    public static function connect(){
-        $connection= new mysqli(self::$host,self::$user,self::$pw, self::$db);
+    public function connect(){
+        $connection= new mysqli($this->host, $this->user, $this->pw, $this->db);
 
         //check connection
         if($connection->connect_error){
@@ -14,5 +14,10 @@ class DBconnect{
         }else{
             return $connection;
         }
+    }
+
+    public function query($q){
+        $ans=mysqli_query($this->connect(), $q);
+        return $ans;
     }
 }

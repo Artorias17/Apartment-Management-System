@@ -7,7 +7,8 @@ class Guard extends User{
         $this->isAdmin=0;
     }
     public static function fetchAll(){
-        $arr=mysqli_query(DBconnect::connect(), "SELECT * FROM users WHERE isAdmin = 0");
+        $sql="SELECT * FROM users WHERE isAdmin = 0";
+        $arr=(new Guard())->queryWrapper($sql);
         $a=[];
         while($k=$arr->fetch_assoc()){
             $a[$k["id"]]=$k;
